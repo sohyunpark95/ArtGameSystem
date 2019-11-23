@@ -2,7 +2,7 @@ let canvas;
 let canvasWidth = 400;
 let canvasHeight = 400;
 let frog;
-let car1;
+let dream1;
 let goal;
 
 function setup() {
@@ -16,9 +16,9 @@ function draw() {
   background(220);
 
 
-  if (car1.position.x >= width) {
-    car1.position.x = 0;
-    car1.setVelocity(random(3, 10), 0);
+  if (dream1.position.x >= width) {
+    dream1.position.x = 0;
+    dream1.setVelocity(random(3, 10), 0);
   }
 
 
@@ -35,8 +35,8 @@ function draw() {
 function resetGame() {
   frog = createSprite(width/2, height-30, 20, 40);
   goal = createSprite(width/2, 0, width, 4);
-  car1 = createSprite(0, height/2, 60, 30);
-  car1.setVelocity(random(3, 10), 0);
+  dream1 = createSprite(0, height/2, 60, 30);
+  dream1.setVelocity(random(3, 10), 0);
 }
 
 
