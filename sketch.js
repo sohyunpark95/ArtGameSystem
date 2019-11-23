@@ -48,10 +48,10 @@ function keyPressed() {
     frog.position.y -= -10;
   }
   if (keyCode == LEFT_ARROW) {
-    frog.position.x -= -10;
+    frog.position.x -= 10;
   }
   if (keyCode == RIGHT_ARROW) {
-    frog.position.x -= 10;
+    frog.position.x -= -10;
   }
 }
 
