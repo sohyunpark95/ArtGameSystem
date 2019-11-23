@@ -1,6 +1,6 @@
 let canvas;
 let canvasWidth = 600;
-let canvasHeight = 400;
+let canvasHeight = 600;
 let frog;
 let car1;
 let goal;
@@ -20,9 +20,6 @@ function draw() {
     car1.position.x = 0;
     car1.setVelocity(random(3, 10), 0);
   }
-
-  if (frog.bounce(car1)) {
-}
 
 
   if (frog.overlap(goal)) {
@@ -50,12 +47,7 @@ function keyPressed() {
 }
 
 
-function checkGameOver() {
-  if (frog.position.x <= 0 || width <= frog.position.x) {
-    fill(255, 0, 0);
-    textSize(60);
-    textAlign(CENTER);
-    text("GAME OVER", width/2, height/2);
+
 
   }
 }
