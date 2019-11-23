@@ -44,6 +44,9 @@ function keyPressed() {
   if (keyCode == UP_ARROW) {
     frog.position.y -= 10;
   }
+  if (keyCode == DOWN_ARROW) {
+    frog.position.y -= -10;
+  }
 }
 
 
