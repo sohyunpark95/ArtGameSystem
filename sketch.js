@@ -21,6 +21,9 @@ function draw() {
     car1.setVelocity(random(3, 10), 0);
   }
 
+  if (frog.bounce(car1)) {
+}
+
 
   if (frog.overlap(goal)) {
     nextLevel();
