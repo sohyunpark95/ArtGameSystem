@@ -47,6 +47,12 @@ function keyPressed() {
   if (keyCode == DOWN_ARROW) {
     frog.position.y -= -10;
   }
+  if (keyCode == LEFT_ARROW) {
+    frog.position.x -= -10;
+  }
+  if (keyCode == RIGHT_ARROW) {
+    frog.position.x -= 10;
+  }
 }
 
 
