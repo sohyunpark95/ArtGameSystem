@@ -1,6 +1,6 @@
 let canvas;
-let canvasWidth = 600;
-let canvasHeight = 600;
+let canvasWidth = 400;
+let canvasHeight = 400;
 let frog;
 let car1;
 let goal;
@@ -27,7 +27,7 @@ function draw() {
   }
 
   drawSprites();
-  checkGameOver();
+  //checkGameOver();
 
 }
 
