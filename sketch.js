@@ -49,8 +49,7 @@ function keyPressed() {
 
 
 
-  }
-}
+
 
 
 function nextLevel() {
