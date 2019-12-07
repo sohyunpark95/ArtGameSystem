@@ -13,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  background(0,0,0);
+  background(255,255,255);
   canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.position(windowWidth/2 - canvasWidth/2, 20);
   x = 280;
@@ -27,7 +27,8 @@ function setup() {
 function draw() {
 //  rect(mouseX, mouseY,40,200);
 //stroke(50);
-
+fill(255,255,255);
+rect(0,0,600,400);
 rect(0,300,140,100);
 rect(460,300,140,100);
 fill(255,240,180,250);
