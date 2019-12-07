@@ -2,7 +2,7 @@ let canvas;
 let canvasWidth = 600;
 let canvasHeight = 400;
 let squid;
-let x, y;
+let x, y,q;
 var tooth;
 var a;
 var b;
@@ -18,6 +18,7 @@ function setup() {
   canvas.position(windowWidth/2 - canvasWidth/2, 20);
   x = 280;
   y = 0;
+  q = 300;
 
 //  noCursor();
 //  resetGame();
@@ -26,7 +27,7 @@ function setup() {
 function draw() {
 //  rect(mouseX, mouseY,40,200);
 //stroke(50);
-  animation(tooth,300,200);
+
 rect(0,300,140,100);
 rect(460,300,140,100);
 fill(255,240,180,250);
@@ -42,5 +43,6 @@ y = y + 1;
 // Reset to the bottom
 if (y >= 300) {
   y = 300;
+  animation(tooth,300,200);
 }
 }
