@@ -1,8 +1,8 @@
 let canvas;
-let canvasWidth = 1500;
+let canvasWidth = 600;
 let canvasHeight = 400;
 let umbrella;
-let x, y;
+let x, y,q;
 var tooth;
 
 
@@ -11,11 +11,15 @@ function preload() {
 }
 
 function setup() {
+  background(0,0,0);
   canvas = createCanvas(canvasWidth, canvasHeight);
-  canvas.position(windowWidth/3 - canvasWidth/3, 20);
+  canvas.position(windowWidth/2 - canvasWidth/2, 20);
   x = 280;
   y = 0;
+  q = 300;
 
+//  noCursor();
+//  resetGame();
 }
 
 function draw() {
@@ -37,6 +41,6 @@ y = y + 1;
 // Reset to the bottom
 if (y >= 300) {
   y = 300;
-  animation(tooth,200,200);
+  animation(tooth,300,200);
 }
 }
