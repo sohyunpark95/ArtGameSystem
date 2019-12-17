@@ -44,3 +44,10 @@ if (y >= 300) {
   animation(tooth,300,200);
 }
 }
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    x = x-10;
+  } else if (keyCode === RIGHT_ARROW) {
+    x = x+10;
+  }
+}

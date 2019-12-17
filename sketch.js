@@ -1,11 +1,8 @@
 let canvas;
-let canvasWidth = 1500;
+let canvasWidth = 600;
 let canvasHeight = 400;
 let umbrella;
-let stone;
-let chopstick;
-let Ry;
-let x;
+let x, y,q;
 var tooth;
 
 
@@ -14,38 +11,38 @@ function preload() {
 }
 
 function setup() {
+  background(0,0,0);
   canvas = createCanvas(canvasWidth, canvasHeight);
-  canvas.position(windowWidth/3 - canvasWidth/3, 20);
+  canvas.position(windowWidth/2 - canvasWidth/2, 20);
+  x = 280;
+  y = 0;
+  q = 300;
 
-  resetGame();
-  Ry = 0;
-x = 250;
+//  noCursor();
+//  resetGame();
 }
+
 function draw() {
-background(100,100,255,5);
-fill(100,100,120);
-rect(0,0,500,400);
+//  rect(mouseX, mouseY,40,200);
+//stroke(50);
+background(100,100,255);
+rect(0,300,140,100);
+rect(460,300,140,100);
 fill(255,240,180,250);
-rect(1000,0,500,400);
-line(0,200,280,300);
-line(0,210,280,310);
-line(320,310,500,380);
-line(320,320,500,390);
-line(280,300,280,310);
-line(320,310,320,320);
-fill(255,10,0);
+rect(320,300,140,100);
+rect(140,300,140,100);
+fill(255,255,255);
+rect(x, y, 40, 100);
 
-fill(50,50,255);
-quad(x, Ry, x+40, Ry+10, x+40, Ry+20, x, Ry+10 );
-Ry = Ry + 1;
-if (Ry >= 400) {
-rect(0,0,200,400);
-if (x <= 280, x >=280){
-}
-}
-}
-function resetGame() {
+x = x ;
+// Moving up at a constant speed
+y = y + 1;
 
+// Reset to the bottom
+if (y >= 300) {
+  y = 300;
+  animation(tooth,300,200);
+}
 }
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
@@ -53,9 +50,4 @@ function keyPressed() {
   } else if (keyCode === RIGHT_ARROW) {
     x = x+10;
   }
-}
-
-function resetGame(){
-
-x=0;
 }
