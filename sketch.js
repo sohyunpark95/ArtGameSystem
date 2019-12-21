@@ -30,7 +30,7 @@ function setup() {
   Oy = 0;
   Ex = 600;
   Rx = 250;
-  Ox = -10;
+  Ox = 0;
 
 }
 function draw() {
@@ -89,9 +89,9 @@ function keyPressed() {
     Ex = Ex+10;
   }
   if (keyCode === LEFT_ARROW) {
-    Ox = Ox-10;
+    Ox = Ox-50;
   } else if (keyCode === RIGHT_ARROW) {
-    Ox = Ox+10;
+    Ox = Ox+50;
   }
   if (keyCode === UP_ARROW) {
     Oy = Oy-10;
