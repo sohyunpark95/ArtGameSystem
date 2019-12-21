@@ -15,9 +15,9 @@ var OutletV;
 
 
 function preload() {
-  RainV = loadAnimation('lib/RainV1.png','lib/RainV2.png','lib/RainV3.png','lib/RainV4.png','lib/RainV5.png','lib/RainV6.png','lib/RainV7.png');
- EarthV = loadAnimation('lib/EarthV1.png','lib/EarthV2.png','lib/EarthV3.png','lib/EarthV4.png','lib/EarthV5.png','lib/EarthV6.png','lib/EarthV7.png');
-OutletV = loadAnimation('lib/OutletV1.png','lib/OutletV2.png','lib/OutletV3.png','lib/OutletV4.png','lib/OutletV5.png','lib/OutletV6.png','lib/OutletV7.png');
+  RainV = loadAnimation('lib/RainV1.png','lib/RainV1.png','lib/RainV2.png','lib/RainV2.png','lib/RainV3.png','lib/RainV3.png','lib/RainV4.png','lib/RainV4.png','lib/RainV5.png','lib/RainV5.png','lib/RainV6.png','lib/RainV6.png','lib/RainV7.png','lib/RainV7.png');
+ EarthV = loadAnimation('lib/EarthV1.png','lib/EarthV1.png','lib/EarthV2.png','lib/EarthV2.png','lib/EarthV3.png','lib/EarthV3.png','lib/EarthV4.png','lib/EarthV4.png','lib/EarthV5.png','lib/EarthV5.png','lib/EarthV6.png','lib/EarthV6.png','lib/EarthV7.png','lib/EarthV7.png');
+OutletV = loadAnimation('lib/OutletV1.png','lib/OutletV1.png','lib/OutletV2.png','lib/OutletV2.png','lib/OutletV3.png','lib/OutletV3.png','lib/OutletV4.png','lib/OutletV4.png','lib/OutletV5.png','lib/OutletV5.png','lib/OutletV6.png','lib/OutletV6.png','lib/OutletV7.png','lib/OutletV7.png');
 }
 
 function setup() {
@@ -49,7 +49,6 @@ fill(50,50,255);
 Rain = quad(Rx, Ry, Rx+40, Ry+10, Rx+40, Ry+20, Rx, Ry+10);
 Ry = Ry + 1;
 if (Ry >= 400) {
-    animation(RainV,500,400);
 fill(255,150,150);
 rect(710,320,30,40);
   fill(0);
@@ -67,7 +66,9 @@ fill(0);
 fill(255,255,255);
 rect(Ox,Oy,400,50);
 if (Ox >=1450) {
-
+    animation(RainV,250,200);
+    animation(EarthV,750,200);
+animation(OutletV,1250,200);
 }
 // Cy = Cy + 1;
 // if (x <= 280, x >=280){
